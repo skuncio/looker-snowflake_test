@@ -8,4 +8,4 @@ include: "*.dashboard"
 
 explore: t8001_user_crossref {}
 
-# - explore: log_data
+explore: log_data {}
