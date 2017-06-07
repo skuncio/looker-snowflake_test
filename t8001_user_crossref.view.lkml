@@ -113,6 +113,11 @@ view: t8001_user_crossref {
     sql: ${TABLE}.C8001_UPDATE_DATE ;;
   }
 
+  measure: distinct_nxtuid {
+    type: count_distinct
+    sql: ${c8001_nxtu_or_did} ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
