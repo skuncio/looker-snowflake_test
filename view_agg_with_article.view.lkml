@@ -1,7 +1,7 @@
 view: view_agg_with_article {
   derived_table: {
     sql: SELECT
-      DATE(contentview.c8002_datetime) as "c8002_datetime",
+      TO_DATE(contentview.c8002_datetime ), 'YYYY-MM-DD')  as "c8002_datetime",
       contentview.c8002_product ,
       contentview.c8002_region ,
       contentview.c8002_platform ,
