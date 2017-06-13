@@ -189,7 +189,7 @@ view: view_agg_with_article {
 
   measure: count {
     type: count
-    approximate: yes
+  # approximate: yes
     drill_fields: []
   }
 
@@ -197,6 +197,6 @@ view: view_agg_with_article {
     #    view_label: Content
     type: count_distinct
     sql: ${content_id} ;;
-    approximate: yes
+    #approximate: yes
   }
 }
